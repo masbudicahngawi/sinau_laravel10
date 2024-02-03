@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Lagu;
 use App\Models\Genre;
 use Illuminate\Http\Request;
+use Illuminate\Contracts\Database\Eloquent\Builder;
 
 class LaguController extends Controller
 {
@@ -114,5 +115,16 @@ class LaguController extends Controller
         // Lagu::delete($rekues['id']);
         $data->delete();
         return redirect()->route('lagu.all')->with('success','Data berhasil dihapus');
+    }
+
+    public function cari(Request $rekues, Lagu $lagu)
+    {
+        $lagus = Lagu::query()->when($rekues->q,
+            function(Builder $builder) use($rekues){
+                $builder->where('judul','like',"%{$rekues->q}%");
+            // ->orWhere('email','like',"%{$rekues->q}%");
+            })->paginate(5);
+
+        return view('lagu.cari',compact('lagus'));
     }
 }

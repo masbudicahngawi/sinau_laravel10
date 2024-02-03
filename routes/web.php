@@ -14,6 +14,7 @@ Route::post('/lagu/proses-tambah', [LaguController::class, 'store'])->name('lagu
 Route::get('/lagu/edit/{id}', [LaguController::class,'edit'])->name('lagu.edit');
 Route::put('/lagu/proses-edit/{id}', [LaguController::class,'update'])->name('lagu.proses.edit');
 Route::post('/lagu/hapus/{id}', [LaguController::class,'destroy'])->name('lagu.destroy');
+Route::get('/lagu/cari', [LaguController::class,'cari'])->name('lagu.cari');
 
 
 // Route::resource('products', ProductController::class);
