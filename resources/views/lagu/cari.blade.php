@@ -6,7 +6,7 @@
 </div>
 @endif
 
-<h5>Pencarian Lagu</h5>
+<h3>Pencarian Lagu</h3>
 
 <a href="{{ route('lagu.tambah') }}">Tambah Lagu</a>
 

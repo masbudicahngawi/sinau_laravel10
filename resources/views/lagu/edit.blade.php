@@ -1,6 +1,6 @@
 @include('header')
 
-<h5>Editing Page</h5>
+<h3>Editing Page</h3>
 
 <form method="POST" action="{{ route('lagu.proses.edit', $datanya->id) }}">
 	@csrf

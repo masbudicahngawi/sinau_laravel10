@@ -12,10 +12,18 @@
 	<script type="text/javascript" src="/jquery-3.7.1.min.js">"></script>
 	<script type="text/javascript" src="/js/bootstrap.bundle.min.js">"></script>
 	<link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-
+	
+	<style type="text/css">
+		footer {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 60px;
+		}
+	</style>
 </head>
 
 <body>
-	<div class="container">
+	<div class="container mt-4">
 		<div class="row">
 			<div class="col-lg-12">

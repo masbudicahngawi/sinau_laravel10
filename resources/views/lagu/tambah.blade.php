@@ -1,6 +1,6 @@
 @include('header')
 
-<h5>Tambah Lagu</h5>
+<h3>Tambah Lagu</h3>
 
 <form method="POST" action="{{ route('lagu.proses.tambah') }}">
 	@csrf

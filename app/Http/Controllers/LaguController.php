@@ -15,7 +15,7 @@ class LaguController extends Controller
     public function index()
     {
         // $semua = Lagu::all();
-        $semua = Lagu::paginate(10);
+        $semua = Lagu::paginate(5);
 
         return view('lagu.index', ['lagus' => $semua]);
     }
