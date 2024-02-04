@@ -6,11 +6,11 @@
 	@csrf
 	<div class="mb-3">
 		<label for="judul" class="form-label">Judul</label>
-		<input type="text" class="form-control rounded-0" name="judul" value="{{ old('judul') }}">
+		<input type="text" class="form-control rounded-0" name="judul" value="{{ old('judul') }}" required>
 	</div>
 	<div class="mb-3">
 		<label for="penyanyi" class="form-label">Penyanyi</label>
-		<input type="text" class="form-control rounded-0" name="penyanyi" value="{{ old('penyanyi') }}">
+		<input type="text" class="form-control rounded-0" name="penyanyi" value="{{ old('penyanyi') }}" required>
 	</div>
 	<div class="mb-3">
 		<label for="genre" class="form-label">Genre</label>

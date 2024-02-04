@@ -23,7 +23,7 @@
 
 <table class="table table-bordered table-sm table-dark table-striped">
   <tr>
-    <th class="text-center">ID</th>
+    <th class="text-center">No</th>
     <th class="text-center">Judul</th>
     <th class="text-center">Penyanyi</th>
     <th class="text-center">Genre</th>

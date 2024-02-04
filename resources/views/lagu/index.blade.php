@@ -10,7 +10,7 @@
 
 <a href="{{ route('lagu.tambah') }}">Tambah Lagu</a>
 
-<table class="table table-bordered table-sm table-dark table-striped table-condensed">
+<table class="table table-bordered table-sm table-dark table-striped">
   <tr>
     <th class="text-center">No</th>
     <th class="text-center">Judul</th>
@@ -33,15 +33,13 @@
     <td>{{$lagu->user->name}}</td>
     <td>
       <a class="btn btn-primary btn-sm rounded-0" href="{{ route('lagu.edit',$lagu->id) }}">Edit</a>
-
       <form class="delete" action="{{ route('lagu.destroy', $lagu->id) }}" method="POST">
         <input type="hidden" name="_method" value="DELETE">
         <input type="hidden" name="_token" value="{{ csrf_token() }}" />
-        <input type="submit" class="btn btn-danger btn-sm rounded-0" value="Delete">
+        <input type="submit" class="btn btn-danger btn-sm rounded-0" value="Hapus">
       </form>
-
     </td>
-  </tr>
+  </tr> 
   <?php $urut++;?>
   @endforeach
 
